@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        background-color: #f1eaea;
+        align-items: flex-start;
+        height: 500px;
+    }
+    .container {
+        justify-content: space-around;
+        display: flex;
+    }
+    hr {
+        color: rgb(194, 187, 187);
+        border-top: 1px solid;
+        position: relative;
+        top: -20px;
+    }
+    h1 {
+        color: rgb(194, 187, 187);
+        padding-top: 0px;
+    }
+    .menu {
+        background-color: #f1eaea;
+        color: blue;
+        cursor: pointer;
+    }
+    .menu li {
+        list-style: none;
+        width: 105px;
+        position: relative;
+        left: -30px; 
+        top: -37px;
+        line-height: 28px;
+    }
+    p {
+        color:rgb(194, 187, 187);
+        text-align: justify;
+        line-height: 20px;
+        margin-top: -12px;
+        margin-left: 23px;  
+    } 
+    .sousmenu1 {
+        background-color: #f1eaea;
+        padding: 0px;
+        position: absolute;
+        list-style: none;
+        display: none;
+    }
+    .sousmenu2 {
+        background-color: #f1eaea;
+        padding: 0px;
+        position: absolute;
+        list-style: none;
+        display: none;
+    }
+    .sousmenu1 li,
+    .sousmenu2 li {
+        width: 90px;
+        left: 7px;
+        top: 0px;
+    }
+    .menu li:hover {
+        background:rgb(247, 197, 222);
+    }
+    li:hover .sousmenu1 {
+        display: block;
+        left: 105px;
+        margin-top: -28px;
+    }
+    li:hover .sousmenu2 {
+        display: block;
+        left: 105px;
+        margin-top: -28px;
+    }
+    .menu .sousmenu1 li:hover,
+    .menu .sousmenu2 li:hover {
+        background-color: rgb(243, 135, 153);
+        width: 90px;
+        left: 0px;
+        
+    }
+    .ligne {
+        top: 60px; 
+        border-left: 1px solid rgb(211, 202, 202);
+        height: 142px;
+        position: absolute;
+        left: 9%;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Le pont mirabeau</h1>
+    <hr></hr>
+    <div class='ligne'></div>
+    <div class ='container'>
+        <div class='menu'> 
+            <ul>
+                <li>Home</li>
+                <li>Services
+                    <ul class="sousmenu1">  
+                        <li>Strategy</li>
+                        <li>Optimization</li>
+                    </ul>
+                </li>
+                <li>Publications
+                    <ul class="sousmenu2">
+                        <li>Articles</li>
+                        <li>Tutoriels</li>
+                    </ul>
+                </li>
+                <li>Events</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class='text'><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, consectetur possimus officiis perspiciatis magni eveniet. Voluptas rem quis exercitationem praesentium repellendus, beatae autem ad eos maxime eaque cumque laudantium. Ex, distinctio ipsa velit nemo doloribus nulla odit laborum dicta blanditiis praesentium modi ullam cumque, laboriosam architecto quidem odio esse quod incidunt ea debitis delectus possimus eaque nobis. Dolor placeat culpa, voluptate dolore nulla facere voluptates facilis repudiandae. Culpa illo, ratione debitis voluptatem quos reprehenderit quod nobis voluptas excepturi placeat laboriosam facilis incidunt labore necessitatibus inventore sint sequi cumque sunt harum esse itaque, dolorem qui recusandae? Voluptate doloremque labore itaque veniam expedita voluptatem nesciunt omnis recusandae facere odio natus ipsa est sapiente, sit laudantium. Voluptas voluptatum quaerat nesciunt, corrupti aperiam illo natus molestiae veritatis minima quam quasi eos tempora! Aut explicabo molestias magni expedita harum fuga, delectus error dicta facere, possimus maxime odio aliquam vitae, quis sapiente amet porro a? Numquam. </p></div>
+    </div> 
+</body>
+</html>
